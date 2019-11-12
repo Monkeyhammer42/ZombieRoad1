@@ -66,6 +66,8 @@
     <Compile Include="Assets\Scripts\HelperScripts\TagManager.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerAnimations.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerMoveScript.cs" />
+    <Compile Include="Assets\Scripts\WeaponScripts\WeaponConfig.cs" />
+    <Compile Include="Assets\Scripts\WeaponScripts\WeaponController.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/GOVR Gold/Documents/ZombieRoad1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
