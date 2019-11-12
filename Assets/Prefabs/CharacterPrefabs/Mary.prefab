@@ -690,6 +690,7 @@ GameObject:
   - component: {fileID: 7660918299871283713}
   - component: {fileID: 7715712124851096469}
   - component: {fileID: 7681596972723209675}
+  - component: {fileID: 6750855312341464089}
   m_Layer: 0
   m_Name: Mary
   m_TagString: Untagged
@@ -758,6 +759,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.18}
   m_EdgeRadius: 0
+--- !u!50 &6750855312341464089
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7658230367376667411}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &7658246800058534531
 GameObject:
   m_ObjectHideFlags: 0
