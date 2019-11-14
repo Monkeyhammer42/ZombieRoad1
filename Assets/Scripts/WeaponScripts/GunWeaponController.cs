@@ -16,7 +16,22 @@ public class GunWeaponController : WeaponController
 
     void Start()
     {
-        
+        if (!GamePlayController.instance.bullet_And_bulletFX_Created) {
+            GamePlayController.instance.bullet_And_bulletFX_Created = true;
+            if (nameWp != NameWeapon.FIRE && nameWp != NameWeapon.ROCKET)
+            {
+                SmartPool.instance.CreateBulletAndBulletFall(bulletPrefab, fx_BulletFall, 100);
+            }
+        }
+        if (!GamePlayController.instance.rocket_Bullet_Created)
+        {
+            if (nameWp == NameWeapon.ROCKET)
+            {
+                GamePlayController.instance.rocket_Bullet_Created = true;
+                SmartPool.instance.CreateRocket(bulletPrefab, 100);
+            }
+        }
+
     }
 
     public override void ProcessAttack()
@@ -41,6 +56,23 @@ public class GunWeaponController : WeaponController
            
 
         }
+        if ((transform != null)&&(nameWp != NameWeapon.FIRE))
+        {
+            if(nameWp != NameWeapon.ROCKET)
+            {
+                GameObject bullet_Fall_FX = SmartPool.instance.SpawnBulletFallFX(spawnPoint.transform.position, Quaternion.identity);
+                bullet_Fall_FX.transform.localScale = (transform.root.eulerAngles.y > 1.0f) ? new Vector3(-1f, 1f,1f):new Vector3(1f,1f,1f) ;
+
+                StartCoroutine(WaitForShootEffect());
+            }
+            SmartPool.instance.SpawnBullet(spawnPoint.transform.position, new Vector3(-transform.root.localScale.x, 0f, 0f), spawnPoint.rotation, nameWp);
+        }
+        else
+        {
+            StartCoroutine(ActiveFireCollider());
+        }
+        
+
         
     }
 
@@ -54,9 +86,10 @@ public class GunWeaponController : WeaponController
 
     IEnumerator ActiveFireCollider()
     {
-        fireCollider.enabled = true;
+        //fireCollider.enabled = true;
+        fx_Shot.Play();
         yield return fire_ColliderWait;
-        fireCollider.enabled = false;
+        //fireCollider.enabled = false;
     }
 
 

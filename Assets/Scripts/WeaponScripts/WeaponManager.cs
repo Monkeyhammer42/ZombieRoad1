@@ -28,7 +28,7 @@ public class WeaponManager : MonoBehaviour
     {
         armController = GetComponentsInChildren<PlayerArmController>();
         playerAnim.SwitchWeaponAnimation((int)weapons_Unlocked[current_Weapon_Index].defaultConfig.typeWeapon);
-
+        ChangeWeapon(weapons_Unlocked[1]);
     }
 
     void LoadActiveWeapons()
@@ -46,8 +46,53 @@ public class WeaponManager : MonoBehaviour
         current_Weapon_Index = (current_Weapon_Index >= weapons_Unlocked.Count) ? 0 : current_Weapon_Index;
 
         playerAnim.SwitchWeaponAnimation((int)weapons_Unlocked[current_Weapon_Index].defaultConfig.typeWeapon);
+
+        ChangeWeapon(weapons_Unlocked[current_Weapon_Index]);
     }
 
+    void ChangeWeapon(WeaponController newWeapon)
+    {
+        if (current_Weapon)
+            current_Weapon.gameObject.SetActive(false);
+        current_Weapon = newWeapon;
+        current_Type_Control = newWeapon.defaultConfig.typeControl;
+        newWeapon.gameObject.SetActive(true);
+        if (newWeapon.defaultConfig.typeWeapon == TypeWeapon.TwoHand)
+        {
+            for(int i = 0; i < armController.Length; i++)
+            {
+                armController[i].ChangeToTwoHand();
+            }
+        }
+        else
+        {
+            for (int i = 0; i < armController.Length; i++)
+            {
+                armController[i].ChangeToOneHand();
+            }
+        }
+    }
+
+    public void Attack()
+    {
+        if (current_Type_Control == TypeControlAttack.Hold)
+        {
+            current_Weapon.CallAttack();
+        }
+        else if (current_Type_Control == TypeControlAttack.Click)
+        {
+            if (!isShooting)
+            {
+                current_Weapon.CallAttack();
+                isShooting = true;
+            }
+        }
+    }
+
+    public void ResetAttack()
+    {
+        isShooting = false;
+    }
 
 
 
