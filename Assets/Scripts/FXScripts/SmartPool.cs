@@ -76,7 +76,7 @@ public class SmartPool : MonoBehaviour
                     bullet_Prefabs[i].SetActive(true);
                     bullet_Prefabs[i].transform.position = position;
                     bullet_Prefabs[i].transform.rotation = rotation;
-
+                    bullet_Prefabs[i].GetComponent<BulletController>().SetDirection(direction);
 
 
                     break;
@@ -96,7 +96,7 @@ public class SmartPool : MonoBehaviour
                     rocket_Bullet_Prefabs[i].SetActive(true);
                     rocket_Bullet_Prefabs[i].transform.position = position;
                     rocket_Bullet_Prefabs[i].transform.rotation = rotation;
-
+                    rocket_Bullet_Prefabs[i].GetComponent<BulletController>().SetDirection(direction);
 
                     break;
                 }

@@ -4664,6 +4664,7 @@ GameObject:
   - component: {fileID: 6456955502029540623}
   - component: {fileID: 6424104905125857521}
   - component: {fileID: 6435282395079451891}
+  - component: {fileID: 114462406375400784}
   m_Layer: 9
   m_Name: Rocket
   m_TagString: RocketMissile
@@ -4734,6 +4735,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.46, y: 0.15}
   m_EdgeRadius: 0
+--- !u!114 &114462406375400784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6453663488461178183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce6e7d0b3821f344da958115f34220bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6454569029461316939
 GameObject:
   m_ObjectHideFlags: 0
