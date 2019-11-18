@@ -74,6 +74,9 @@
     <Compile Include="Assets\Scripts\WeaponScripts\WeaponConfig.cs" />
     <Compile Include="Assets\Scripts\WeaponScripts\WeaponController.cs" />
     <Compile Include="Assets\Scripts\WeaponScripts\WeaponManager.cs" />
+    <Compile Include="Assets\Scripts\ZombieScripts\ZombieAnimation.cs" />
+    <Compile Include="Assets\Scripts\ZombieScripts\ZombieController.cs" />
+    <Compile Include="Assets\Scripts\ZombieScripts\ZombieMovement.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Scource Tree/ZombieRoad/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

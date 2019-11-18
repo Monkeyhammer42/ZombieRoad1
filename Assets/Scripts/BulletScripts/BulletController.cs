@@ -55,6 +55,10 @@ public class BulletController : MonoBehaviour
         yield return wait_For_Time_Alive;
         gameObject.SetActive(false);
     }
+    public void ExplosionFX()
+    {
+        Instantiate(rocket_Explosion, transform.position, Quaternion.identity);
+    }
 
 }
 
