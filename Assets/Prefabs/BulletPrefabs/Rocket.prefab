@@ -4747,6 +4747,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce6e7d0b3821f344da958115f34220bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 0
+  rocket_Explosion: {fileID: 1777957916110860, guid: b1038453f36cc41c584473fd83977860,
+    type: 3}
 --- !u!1 &6454569029461316939
 GameObject:
   m_ObjectHideFlags: 0
