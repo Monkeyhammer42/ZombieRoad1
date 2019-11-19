@@ -4748,7 +4748,7 @@ GameObject:
   m_Component:
   - component: {fileID: 434802}
   - component: {fileID: 6176984}
-  m_Layer: 12
+  m_Layer: 10
   m_Name: HealthCollider
   m_TagString: ZombieHealth
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
@@ -33406,6 +33406,9 @@ GameObject:
   - component: {fileID: 9586278}
   - component: {fileID: 5060664}
   - component: {fileID: 6117422}
+  - component: {fileID: 4721017868865190591}
+  - component: {fileID: 2184996552920391842}
+  - component: {fileID: 7550710026231689139}
   m_Layer: 9
   m_Name: BossZombie
   m_TagString: Enemy
@@ -33497,6 +33500,49 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64, y: 0.21}
   m_EdgeRadius: 0
+--- !u!114 &4721017868865190591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bd33f41b18b2ab41ad88dde2b55a99d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2184996552920391842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2a684ccbef7e7946a64ad8aa7a85e7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage_Collider: {fileID: 0}
+  zombiehealth: 10
+  fxDead:
+  - {fileID: 135430}
+  - {fileID: 112682}
+  - {fileID: 135430}
+  coinCollectable: {fileID: 0}
+--- !u!114 &7550710026231689139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0464cfb20e5a6a341b89f5447be66ed7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &159114
 GameObject:
   m_ObjectHideFlags: 0

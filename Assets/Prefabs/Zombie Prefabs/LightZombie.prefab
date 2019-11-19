@@ -46,6 +46,9 @@ GameObject:
   - component: {fileID: 9531952}
   - component: {fileID: 5011356}
   - component: {fileID: 6128634}
+  - component: {fileID: 3678681463282452287}
+  - component: {fileID: 1826884305996202722}
+  - component: {fileID: 511839923506682885}
   m_Layer: 9
   m_Name: LightZombie
   m_TagString: Enemy
@@ -137,6 +140,49 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.1866486}
   m_EdgeRadius: 0
+--- !u!114 &3678681463282452287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bd33f41b18b2ab41ad88dde2b55a99d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1826884305996202722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2a684ccbef7e7946a64ad8aa7a85e7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage_Collider: {fileID: 0}
+  zombiehealth: 10
+  fxDead:
+  - {fileID: 131304}
+  - {fileID: 166776}
+  - {fileID: 131304}
+  coinCollectable: {fileID: 0}
+--- !u!114 &511839923506682885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0464cfb20e5a6a341b89f5447be66ed7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &111236
 GameObject:
   m_ObjectHideFlags: 0
@@ -10042,7 +10088,7 @@ GameObject:
   m_Component:
   - component: {fileID: 412660}
   - component: {fileID: 6180728}
-  m_Layer: 12
+  m_Layer: 10
   m_Name: HealthCollider
   m_TagString: ZombieHealth
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}

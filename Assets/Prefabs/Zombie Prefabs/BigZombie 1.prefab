@@ -4998,6 +4998,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2a684ccbef7e7946a64ad8aa7a85e7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage_Collider: {fileID: 0}
+  zombiehealth: 10
+  fxDead:
+  - {fileID: 3394312182950552486}
+  - {fileID: 3394312182950539560}
+  - {fileID: 3394312182950552486}
+  coinCollectable: {fileID: 0}
 --- !u!114 &1497495459853286103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19454,7 +19461,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3394312182950295878}
   - component: {fileID: 3394312182955033310}
-  m_Layer: 12
+  m_Layer: 10
   m_Name: HealthCollider
   m_TagString: ZombieHealth
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}

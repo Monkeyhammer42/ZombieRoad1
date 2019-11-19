@@ -9494,6 +9494,9 @@ GameObject:
   - component: {fileID: 95510008073723006}
   - component: {fileID: 50147177001690072}
   - component: {fileID: 61925291701778586}
+  - component: {fileID: 2700763965635551095}
+  - component: {fileID: 1654258314259520718}
+  - component: {fileID: 2603554320669011318}
   m_Layer: 9
   m_Name: LittleZombie
   m_TagString: Enemy
@@ -9585,6 +9588,49 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.1866486}
   m_EdgeRadius: 0
+--- !u!114 &2700763965635551095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163977106071414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bd33f41b18b2ab41ad88dde2b55a99d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1654258314259520718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163977106071414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2a684ccbef7e7946a64ad8aa7a85e7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage_Collider: {fileID: 0}
+  zombiehealth: 10
+  fxDead:
+  - {fileID: 1294077092398870}
+  - {fileID: 1240282190124786}
+  - {fileID: 1294077092398870}
+  coinCollectable: {fileID: 0}
+--- !u!114 &2603554320669011318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163977106071414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0464cfb20e5a6a341b89f5447be66ed7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1181210880420030
 GameObject:
   m_ObjectHideFlags: 0
@@ -19896,7 +19942,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4012156711633930}
   - component: {fileID: 61078667505055502}
-  m_Layer: 12
+  m_Layer: 10
   m_Name: HealthCollider
   m_TagString: ZombieHealth
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
