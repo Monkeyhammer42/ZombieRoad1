@@ -114,7 +114,19 @@ public class ZombieController : MonoBehaviour
                 zombie_Animation.Dead();
                 StartCoroutine(DeactivateZombie());
             }
+            
             target.gameObject.SetActive(false);
+        }
+        if (target.tag == TagManager.FIRE_BULLET_TAG)
+        {
+            zombie_Animation.Hurt();
+            zombiehealth -= fireDamage;
+            if (zombiehealth <= 0)
+            {
+                zombie_Alive = false;
+                zombie_Animation.Dead();
+                StartCoroutine(DeactivateZombie());
+            }
         }
     }
     void OnTriggerExit2D(Collider2D target)
