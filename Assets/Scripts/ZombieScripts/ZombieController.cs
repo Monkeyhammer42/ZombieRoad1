@@ -31,7 +31,15 @@ public class ZombieController : MonoBehaviour
 
 
 
-        targetTransform = GameObject.FindGameObjectWithTag(TagManager.PLAYER_TAG).transform;
+        if (GamePlayController.instance.zombieGoal == ZombieGoal.PLAYER)
+        {
+            targetTransform = GameObject.FindGameObjectWithTag(TagManager.PLAYER_TAG).transform;
+        }else if(GamePlayController.instance.zombieGoal == ZombieGoal.FENCE)
+        {
+            GameObject[] fences = GameObject.FindGameObjectsWithTag(TagManager.FENCE_TAG);
+            targetTransform = fences[Random.Range(0, fences.Length)].transform;
+
+        }
     }
 
 

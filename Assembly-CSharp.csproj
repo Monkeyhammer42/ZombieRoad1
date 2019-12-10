@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BulletScripts\BulletController.cs" />
+    <Compile Include="Assets\Scripts\FenceScripts\FenceHealth.cs" />
     <Compile Include="Assets\Scripts\FXScripts\DeactivateFX.cs" />
     <Compile Include="Assets\Scripts\FXScripts\SmartPool.cs" />
     <Compile Include="Assets\Scripts\HelperScripts\GamePlayController.cs" />
