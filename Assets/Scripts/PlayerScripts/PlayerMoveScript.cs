@@ -6,7 +6,7 @@ public class PlayerMoveScript : MonoBehaviour
 {
 
     private Rigidbody2D myBody;
-    private float moveForce_X = 1.5f, moveForce_Y = 1.5f;
+    private float moveForce_X = 2f, moveForce_Y = 2f;
 
     private PlayerAnimations playerAnimation;
 

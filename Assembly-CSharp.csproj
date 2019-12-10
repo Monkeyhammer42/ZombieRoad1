@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BulletScripts\BulletController.cs" />
+    <Compile Include="Assets\Scripts\CameraScripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\FenceScripts\FenceHealth.cs" />
     <Compile Include="Assets\Scripts\FXScripts\DeactivateFX.cs" />
     <Compile Include="Assets\Scripts\FXScripts\SmartPool.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerInputController.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerMoveScript.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\PlayerWalkBounds.cs" />
     <Compile Include="Assets\Scripts\WeaponScripts\GunWeaponController.cs" />
     <Compile Include="Assets\Scripts\WeaponScripts\MeleeWeaponController.cs" />
     <Compile Include="Assets\Scripts\WeaponScripts\MeleeWeaponDamage.cs" />

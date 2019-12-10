@@ -845,6 +845,7 @@ GameObject:
   - component: {fileID: 211546385761742013}
   - component: {fileID: 225100070}
   - component: {fileID: 5319895875462531408}
+  - component: {fileID: 5576617980992277858}
   m_Layer: 8
   m_Name: Tommy
   m_TagString: Player
@@ -997,6 +998,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canShoot: 0
+--- !u!114 &5576617980992277858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940654426450688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1710d75e5ec75924087a2915746412c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1966007364148674
 GameObject:
   m_ObjectHideFlags: 0
