@@ -92,6 +92,15 @@ public class ZombieController : MonoBehaviour
             StartCoroutine(DeactivateZombie());
         }
     }
+    void ActivateDamagePoint()
+    {
+        damage_Collider.SetActive(true);
+    }
+    void DeactivateDamagePoint()
+    {
+        damage_Collider.SetActive(false);
+    }
+
 
     void OnTriggerEnter2D(Collider2D target)
     {

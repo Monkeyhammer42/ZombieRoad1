@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\HelperScripts\TagManager.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerAnimations.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerArmController.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerInputController.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerMoveScript.cs" />
     <Compile Include="Assets\Scripts\WeaponScripts\GunWeaponController.cs" />
@@ -82,6 +83,7 @@
     <Compile Include="Assets\Scripts\ZombieScripts\SMZombieDead.cs" />
     <Compile Include="Assets\Scripts\ZombieScripts\ZombieAnimation.cs" />
     <Compile Include="Assets\Scripts\ZombieScripts\ZombieController.cs" />
+    <Compile Include="Assets\Scripts\ZombieScripts\ZombieDamage.cs" />
     <Compile Include="Assets\Scripts\ZombieScripts\ZombieMovement.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/GOVR Gold/Documents/ZombieRoad1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

@@ -143,6 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet_And_bulletFX_Created: 0
   rocket_Bullet_Created: 0
+  playerAlive: 0
 --- !u!4 &218326424
 Transform:
   m_ObjectHideFlags: 0
@@ -405,6 +406,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3308500928565484414, guid: 41c872e12dafc50468a05438d81e8956,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1427516075
+      objectReference: {fileID: 0}
+    - target: {fileID: 3308500928565484414, guid: 41c872e12dafc50468a05438d81e8956,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9081009557773072053, guid: 41c872e12dafc50468a05438d81e8956,
+        type: 3}
+      propertyPath: radius
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41c872e12dafc50468a05438d81e8956, type: 3}
