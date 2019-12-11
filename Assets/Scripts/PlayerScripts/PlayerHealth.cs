@@ -20,6 +20,9 @@ public class PlayerHealth : MonoBehaviour
     public void DealDamage(int damage)
     {
         health -= damage;
+
+        GamePlayController.instance.PlayerLifeCounter(health);
+
         playerAnim.Hurt();
         if (health <= 0)
         {
