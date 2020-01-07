@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public enum ZombieGoal
 {
@@ -51,7 +52,7 @@ public class GamePlayController : MonoBehaviour
     void Start()
     {
         playerAlive = true;
-
+        Time.timeScale = 1f;
         if (gameGoal == GameGoal.WALK_TO_GOAL_STEPS)
         {
             playerTarget = GameObject.FindGameObjectWithTag(TagManager.PLAYER_TAG).transform;
@@ -163,12 +164,16 @@ public class GamePlayController : MonoBehaviour
         pausePanel.SetActive(false);
     }
 
+    public void QuitGame()
+    {
 
-
-
-
-
-
-
-
+        SceneManager.LoadScene(TagManager.MAIN_MENU_NAME);
     }
+
+
+
+
+
+
+
+}
