@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenuController : MonoBehaviour
 {
@@ -24,7 +25,14 @@ public class MainMenuController : MonoBehaviour
     {
         SceneManager.LoadScene(TagManager.LEVEL_4_NAME);
     }
- 
+    public void SelectTommy()
+    {
+        GameManager.instance.CharacteIndex = 0;
+    }
+    public void SelectMary()
+    {
+        GameManager.instance.CharacteIndex = 1;
+    }
 
     public void OpenCharacterSelectPanel()
     {

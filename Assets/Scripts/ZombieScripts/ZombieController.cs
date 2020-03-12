@@ -11,7 +11,7 @@ public class ZombieController : MonoBehaviour
     private Transform targetTransform;
     private bool canAttack;
     private bool zombie_Alive;
-
+  
 
     public GameObject damage_Collider;
 
@@ -26,7 +26,7 @@ public class ZombieController : MonoBehaviour
     {
         zombie_Movement = GetComponent<ZombieMovement>();
         zombie_Animation = GetComponent<ZombieAnimation>();
-      
+       
         zombie_Alive = true;
 
 
@@ -84,7 +84,7 @@ public class ZombieController : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         GamePlayController.instance.ZombieDied();
-        //Instantiate(coinCollectable, transform.position, Quaternion.identity);
+        Instantiate(coinCollectable, transform.position, Quaternion.identity);
 
         gameObject.SetActive(false);
 
@@ -97,6 +97,7 @@ public class ZombieController : MonoBehaviour
         {
             zombie_Alive = false;
             zombie_Animation.Dead();
+         
             StartCoroutine(DeactivateZombie());
         }
     }
@@ -143,6 +144,7 @@ public class ZombieController : MonoBehaviour
                 zombie_Alive = false;
                 zombie_Animation.Dead();
                 StartCoroutine(DeactivateZombie());
+              
             }
         }
     }
