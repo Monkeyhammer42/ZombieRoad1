@@ -57,7 +57,9 @@ public class BulletController : MonoBehaviour
     }
     public void ExplosionFX()
     {
+        AudioManager.instance.FenceExplosionSound();
         Instantiate(rocket_Explosion, transform.position, Quaternion.identity);
+      
     }
 
 }

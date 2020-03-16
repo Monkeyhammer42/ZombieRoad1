@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\FenceScripts\FenceHealth.cs" />
     <Compile Include="Assets\Scripts\FXScripts\DeactivateFX.cs" />
     <Compile Include="Assets\Scripts\FXScripts\SmartPool.cs" />
+    <Compile Include="Assets\Scripts\HelperScripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\HelperScripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\HelperScripts\GamePlayController.cs" />
     <Compile Include="Assets\Scripts\HelperScripts\MainMenuController.cs" />

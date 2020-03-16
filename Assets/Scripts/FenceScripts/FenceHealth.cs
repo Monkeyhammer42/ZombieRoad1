@@ -18,6 +18,7 @@ public class FenceHealth : MonoBehaviour
         if (health <= 0)
         {
             wood_Explode_FX.Play();
+            AudioManager.instance.FenceExplosionSound();
             GamePlayController.instance.fenceDestroyed = true;
             StartCoroutine(DeactivateGameObject());
         }

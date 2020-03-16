@@ -68,7 +68,13 @@ public class ZombieController : MonoBehaviour
                 if (canAttack)
                 {
                     zombie_Animation.Attack();
+                    timerAttack += Time.deltaTime;
+                    if (timerAttack > 0.45f)
+                    { timerAttack = 0f;
+                        AudioManager.instance.ZombieAttackSound();
+                    }
                 }
+                   
             }
         }
     }
@@ -82,7 +88,8 @@ public class ZombieController : MonoBehaviour
     }
     IEnumerator DeactivateZombie()
     {
-        yield return new WaitForSeconds(2f);
+        AudioManager.instance.ZombieDieSound();
+        yield return new WaitForSeconds(0.5f);
         GamePlayController.instance.ZombieDied();
         Instantiate(coinCollectable, transform.position, Quaternion.identity);
 

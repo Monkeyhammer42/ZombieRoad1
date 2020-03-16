@@ -99,7 +99,7 @@ public class GamePlayController : MonoBehaviour
                 step_Count--;
                 if (step_Count <= 0)
                 {
-                    print("bleugh");
+                    GameOver();
                 }
                 player_Previous_Position = playerTarget.position;
             }
@@ -132,8 +132,9 @@ public class GamePlayController : MonoBehaviour
         timer_Text.text = timer_Count.ToString();
         if (timer_Count <= 0)
         {
-            print("Game Over!");
+            
             CancelInvoke("TimerCountdown");
+            GameOver();
         }
     }
     public void ZombieDied()
@@ -142,8 +143,8 @@ public class GamePlayController : MonoBehaviour
         zombieCounter_Text.text = zombie_Count.ToString();
         if (zombie_Count <= 0)
         {
-            print("Game Over!");
-            
+            GameOver();
+
         }
 
     }
@@ -151,6 +152,11 @@ public class GamePlayController : MonoBehaviour
     {
         fillPercentage /= 100f;
         playerLife.fillAmount = fillPercentage;
+    }
+    public void GameOver()
+    {
+        gameOverPanel.SetActive(true);
+        Time.timeScale = 0.00001f;
     }
     public void PauseGame()
     {
@@ -166,7 +172,7 @@ public class GamePlayController : MonoBehaviour
 
     public void QuitGame()
     {
-
+        Time.timeScale = 1f;
         SceneManager.LoadScene(TagManager.MAIN_MENU_NAME);
     }
 

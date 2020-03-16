@@ -31,6 +31,7 @@ public class PlayerHealth : MonoBehaviour
             GetComponent<Collider2D>().enabled = false;
             playerAnim.Dead();
             blood_FX[Random.Range(0, blood_FX.Length)].SetActive(true);
+            GamePlayController.instance.GameOver();
         }
     }
 

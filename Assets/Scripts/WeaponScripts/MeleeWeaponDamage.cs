@@ -12,9 +12,12 @@ public class MeleeWeaponDamage : MonoBehaviour
     private void Update()
     {
         Collider2D target = Physics2D.OverlapCircle(transform.position, radius, collisionLayer);
-        if (target.tag == TagManager.ZOMBIE_HEALTH_TAG)
+        if (target)
         {
-            target.transform.root.gameObject.GetComponent<ZombieController>().DealDamage(damage);
+            if (target.tag == TagManager.ZOMBIE_HEALTH_TAG)
+            {
+                target.transform.root.gameObject.GetComponent<ZombieController>().DealDamage(damage);
+            }
         }
     }
 }

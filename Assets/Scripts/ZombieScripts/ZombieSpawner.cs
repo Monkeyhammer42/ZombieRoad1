@@ -18,6 +18,7 @@ public class ZombieSpawner : MonoBehaviour
         player = GameObject.FindGameObjectWithTag(TagManager.PLAYER_TAG).transform;
 
         fx_Shred.SetActive(true);
+        AudioManager.instance.ZombieRiseSound();
 
         zombie = Instantiate(zombiePrefab, spawnPoint.position, Quaternion.identity);
 
